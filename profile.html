@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Dashboard - SB Admin</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+
+
+    <link href="css/vanilla-calendar.min.css" rel="stylesheet" />
+    <link href="css/styles.css" rel="stylesheet" />
+    <link href="css/afm-styles.css" rel="stylesheet" />
+    <link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/input-material.css">
+    <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
+
+
+</head>
+
+
+<body>
+    <div class="container-fluid ">
+
+
+        <nav class="sb-topnav navbar navbar-expand navbar-dark bg-dark">
+            <!-- Navbar Brand-->
+            <a class="navbar-brand ps-3" href="index.html">
+
+
+                <div class="sb-nav-link-icon"><img class="sidebar-icon" src="assets/img/download (11).png">
+                </div>
+                <!-- Charts -->
+
+            </a>
+            <!-- Sidebar Toggle-->
+            <!-- <button class="btn btn-link btn-sm order-1 order-lg-0 me-4 me-lg-0" id="sidebarToggle" href="#!"><img src="assets/img/download (12).png"></button> -->
+            <div class="sb-nav-link-icon"><img class="sidebar-icon1" src="assets/img/download (12).png">
+                <img class="sidebar-icon" src="assets/img/download (13).png"></div>
+            <!-- Navbar Search-->
+            <form class="d-none d-md-inline-block form-inline ms-auto me-0 me-md-3 my-2 my-md-0">
+                <!-- <div class="input-group">
+                <input class="form-control" type="text" placeholder="Search for..." aria-label="Search for..." aria-describedby="btnNavbarSearch" />
+                <button class="btn btn-primary" id="btnNavbarSearch" type="button"><i class="fas fa-search"></i></button>
+            </div> -->
+            </form>
+            <!-- Navbar-->
+            <ul class="navbar-nav ms-auto ms-md-0 me-3 me-lg-4">
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link " id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="fas fa-bell fa-fw"></i><span class="indicator">4</span></a>
+                    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="#!">Settings</a></li>
+                        <li><a class="dropdown-item" href="#!">Activity Log</a></li>
+                        <li>
+                            <hr class="dropdown-divider" />
+                        </li>
+                        <li><a class="dropdown-item" href="#!">Logout</a></li>
+                    </ul>
+
+                </li>
+                <div class="vr"></div>
+
+                <li class="nav-item  dropdown">
+                    <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Matt 
+                       <img src="assets/img/face5.jpg" class="nav-profile img-fluid"></a>
+
+                    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="#!">Settings</a></li>
+                        <li><a class="dropdown-item" href="#!">Activity Log</a></li>
+                        <li>
+                            <hr class="dropdown-divider" />
+                        </li>
+                        <li><a class="dropdown-item" href="#!">Logout</a></li>
+
+                    </ul>
+
+                </li>
+
+
+
+
+
+
+            </ul>
+
+
+            </a>
+        </nav>
+
+
+        <div id="layoutSidenav">
+            <div id="layoutSidenav_nav">
+                <nav class="sb-sidenav accordion sb-sidenav-dark" id="sidenavAccordion">
+                    <div class="sb-sidenav-menu">
+                        <div class="nav">
+                            <a class="nav-link" href="tables.html">
+                                <div class="sb-nav-link-icon"><img class="sidebar-icon" src="assets/img/download (15).png"></div>
+                                <!-- Tables -->
+                            </a>
+                            <a class="nav-link" href="tables.html">
+                                <div class="sb-nav-link-icon"><img class="sidebar-icon" src="assets/img/download (14).png"></div>
+                                <!-- Tables -->
+                            </a>
+                            <!-- <div class="sb-sidenav-menu-heading">Core</div> -->
+                            <a class="nav-link" href="index.html">
+                                <div class="sb-nav-link-icon"><img class="sidebar-icon" src="assets/img/download.png">
+                                </div>
+                                <!-- Dashboard -->
+                            </a>
+
+
+
+                            <a class="nav-link" href="tables.html">
+                                <div class="sb-nav-link-icon"><img class="sidebar-icon" src="assets/img/download (1).png"></div>
+                                <!-- Tables -->
+                            </a>
+                            <a class="nav-link" href="tables.html">
+                                <div class="sb-nav-link-icon"><img class="sidebar-icon" src="assets/img/download (2).png"></div>
+                                <!-- Tables -->
+                            </a>
+                            <a class="nav-link" href="tables.html">
+                                <div class="sb-nav-link-icon"><img class="sidebar-icon" src="assets/img/download (3).png"></div>
+                                <!-- Tables -->
+                            </a>
+                            <a class="nav-link" href="tables.html">
+                                <div class="sb-nav-link-icon"><img class="sidebar-icon" src="assets/img/download (4).png"></div>
+                                <!-- Tables -->
+                            </a>
+                            <a class="nav-link" href="tables.html">
+                                <div class="sb-nav-link-icon"><img class="sidebar-icon" src="assets/img/download (5).png"></div>
+                                <!-- Tables -->
+                            </a>
+                            <a class="nav-link" href="tables.html">
+                                <div class="sb-nav-link-icon"><img class="sidebar-icon" src="assets/img/download (6).png"></div>
+                                <!-- Tables -->
+                            </a>
+                        </div>
+                    </div>
+
+                </nav>
+            </div>
+
+
+
+            <div id="layoutSidenav_content" class="bg-light">
+                <div class="border-b bg-white border-gray-300 pl-6 py-2 shadow-sm  text-xl font-bold">
+                    <div class="sb-nav-link-icon">
+
+
+                        <ul>
+                            <li class="theList1">
+
+                                <img src="assets/img/1.png" class="nav-profile img-fluid" alt="">John Doe
+                                <span class=" fa fa-angle-down"></span>
+                                </a>
+
+                            </li>
+                            <li class="theList">
+
+                                <img src="assets/img/2.png" class="nav-profile1 img-fluid" alt="">
+                                <span class=" fa fa-angle-down"></span>
+                                </a>
+
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12  col-12 bg-white rounded-top tab-head">
+                            <ul class="nav nav-tabs" id="myTab" role="tablist">
+                                <li class="nav-item">
+                                    <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Profile</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Contact</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Contact</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Contact</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Contact</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-10 offset-lg-1 bg-white p-3">
+                            <div class="tab-content mt-4" id="myTabContent">
+                                <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                                    <div class="m-4">
+                                        <div class="accordion" id="myAccordion">
+                                            <div class="accordion-item">
+                                                <h2 class="accordion-header" id="headingOne">
+                                                    <button type="button" class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#collapseOne">Personal Details</button>
+                                                </h2>
+                                                <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#myAccordion">
+                                                    <div class="card-body">
+                                                        <form class="row g-3 needs-validation cart-form" novalidate>
+                                                            <div class="col-md-6">
+                                                                <label for="validationCustom01" class="label-f form-label First-name">First name <span class="asterik">*</span></label>
+                                                                <input type="text" class="form-control" id="validationCustom01" placeholder="Enter name here" required>
+                                                                <div class="invalid-feedback">
+                                                                    Please Enter name here
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-6">
+                                                                <label for="validationCustom02" class="label-f form-label Last-name">Last name <span class="asterik">*</span></label>
+                                                                <input type="text" class="form-control" id="validationCustom02" placeholder="Enter last name here" required>
+                                                                <div class="invalid-feedback">
+                                                                    Please Enter last name here
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-6">
+                                                                <label for="validationCustom03" class="label-f form-label Email">Email <span class="asterik">*</span></label>
+                                                                <input type="email" class="form-control" id="validationCustom03" placeholder="Enter email here" required>
+                                                                <div class="invalid-feedback">
+                                                                    Enter valid email here
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-6">
+                                                                <label for="validationCustom04" class=" label-f form-label Mobile-no">Mobile no <span class="asterik">*</span></label>
+                                                                <div class="row">
+                                                                    <div class="col-3 p-0">
+                                                                        <select class="form-control" id="validationCustom04" class="form-control" required>
+                                                                            <option selected>00</option>
+                                                                            <option>+91</option>
+                                                                            <option>+231</option>
+                    
+                                                                        </select>
+                                                                        <div class="invalid-feedback">
+                                                                            Enter country code here
+                                                                        </div>
+
+                                                                    </div>
+                                                                    <div class="col-9">
+                                                                        <input type="email" class="form-control" id="validationCustom05" placeholder="Enter mobile no here" required>
+                                                                        <div class="invalid-feedback">
+                                                                            Enter valid mobile no
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-12">
+                                                                <label for="crt-address" class=" label-f form-label">Address <span class="asterik">*</span></label>
+                                                                <input type="text" class="form-control" id="crt-address" placeholder="Enter Address here" required>
+                                                                <div class="invalid-feedback">
+                                                                    Please Enter address here
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-6">
+                                                                <label for="apt-suite" class="label-f form-label">Apt./Suite/Other <span class="asterik">*</span></label>
+                                                                <input type="text" class="form-control" id="apt-suite" placeholder="Enter Apt./Suite/Other" required>
+                                                                <div class="invalid-feedback">
+                                                                    Please Apt./Suite/Other here
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-6">
+                                                                <label for="crt-country" class="label-f form-label">Country<span class="asterik">*</span></label>
+                                                                <select class="form-control" id="crt-country" class="form-control" required>
+                                                                    <option selected>Select</option>
+                                                                    <option>Afganistan</option>
+                                                                    <option>Aland Islands</option>
+                    
+                                                                </select>
+                                                                <div class="invalid-feedback">
+                                                                    Enter country code here
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-6">
+                                                                <label for="crt-city" class="label-f form-label">City<span class="asterik">*</span></label>
+                                                                <select class="form-control" id="crt-city" class="form-control" placeholder="" required>
+                                                                    <option selected>Select</option>
+                                                                    <option>Pune</option>
+                                                                    <option>Mumbai</option>
+                    
+                                                                </select>
+                                                                <div class="invalid-feedback">
+                                                                    Enter city name here
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-6">
+                                                                <label for="crt-postal" class="label-f form-label">Postal Code  <span class="asterik">*</span></label>
+                                                                <input type="text" class="form-control" id="crt-postal" placeholder="Enter postal code here" required>
+                                                                <div class="invalid-feedback">
+                                                                    Please Enter postal code here
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-6 ">
+                                                                <p class="sm-text">Save address as a</p>
+
+                                                                <ul class="donate-now">
+                                                                    <li>
+                                                                        <input type="radio" id="a25" name="amount" />
+                                                                        <label for="a25">Home</label>
+                                                                    </li>
+                                                                    <li>
+                                                                        <input type="radio" id="a50" name="amount" />
+                                                                        <label for="a50">Work</label>
+                                                                    </li>
+                                                                </ul>
+
+                                                            </div>
+                                                            <div class="col-md-12">
+                                                                <div class="form-group">
+                                                                    <div class="form-check p-0">
+                                                                        <input class="form-check-input" type="checkbox" id="gridCheck">
+                                                                        <label class="form-check-label ml-0" for="gridCheck">
+                                                                            Use as my default address.
+                                                                        </label>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+
+
+                                                            <div class="col-12">
+                                                                <button class="btn btn-primary" type="submit">Submit form</button>
+                                                            </div>
+                                                        </form>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- <div class="accordion-item">
+                                                <h2 class="accordion-header" id="headingTwo">
+                                                    <button type="button" class="accordion-button" data-bs-toggle="collapse" data-bs-target="#collapseTwo">2. What is Bootstrap?</button>
+                                                </h2>
+                                                <div id="collapseTwo" class="accordion-collapse collapse show" data-bs-parent="#myAccordion">
+                                                    <div class="card-body">
+                                                        <p>Bootstrap is a sleek, intuitive, and powerful front-end framework for faster and easier web development. It is a collection of CSS and HTML conventions. <a href="https://www.tutorialrepublic.com/twitter-bootstrap-tutorial/"
+                                                                target="_blank">Learn more.</a></p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="accordion-item">
+                                                <h2 class="accordion-header" id="headingThree">
+                                                    <button type="button" class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#collapseThree">3. What is CSS?</button>
+                                                </h2>
+                                                <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#myAccordion">
+                                                    <div class="card-body">
+                                                        <p>CSS stands for Cascading Style Sheet. CSS allows you to specify various style properties for a given HTML element such as colors, backgrounds, fonts etc. <a href="https://www.tutorialrepublic.com/css-tutorial/"
+                                                                target="_blank">Learn more.</a></p>
+                                                    </div>
+                                                </div>
+                                            </div> -->
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                                    <form id="contact-form">
+                                        <div class="form-group input-material">
+                                            <input type="text" class="form-control" id="name-field" required>
+                                            <label for="name-field">Name</label>
+                                        </div>
+                                        <div class="form-group input-material">
+                                            <input type="email" class="form-control" id="email-field" required>
+                                            <label for="email-field">Email</label>
+                                        </div>
+                                        <div class="form-group input-material">
+                                            <textarea class="form-control" id="textarea-field" rows="3" required></textarea>
+                                            <label for="textarea-field">Your Message</label>
+                                        </div>
+                                        <div class="text-center">
+                                            <button type="submit" class="btn btn-primary">Send</button>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+                                    <h5 class="pl-2">Contact</h5>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
+                                        est laborum.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+        </div>
+        <div class="container-fluid px-4 bg">
+            <footer class="py-4 mt-auto">
+
+                <div class="footer">
+
+
+
+                    <img class="logo" src="assets/img/download (10).png" alt="logo">
+                    <div class="text-muted1">
+                        <h6>Powerd by AFM</h6>
+                    </div>
+                    <div class="text-muted">
+
+
+                        Security and your online Application
+                        <p>Our site and your online application are secure. For more information read our information on security.</p>
+
+                        Copyright &copy; 2019 GCP Ltd</div>
+
+
+                </div>
+
+
+
+
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+
+
+    </footer>
+
+
+
+
+    <script src="js/vanilla-calendar.min.js"></script>
+    <script src="js/scripts.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const calendar = new VanillaCalendar('.vanilla-calendar');
+            calendar.init();
+        });
+    </script>
+    <script>
+        $('document').ready(function() {
+            $('form').materializeInputs(".input-material input-1, .input-material input-2");
+        });
+    </script>
+    <script>
+        $('document').ready(function() {
+            // enable material-style inputs in entire body
+            $('body').materializeInputs();
+        });
+    </script>
+
+</body>
+
+</html>
