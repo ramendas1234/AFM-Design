@@ -1039,7 +1039,7 @@ img.sidebar-icon {
     border: none !important;
 }
 
-.upcoming-event{
+.upcoming-event, .chat-event{
     border: unset;
     border-radius: 5px;
     box-shadow: 0px 1px 3px 0 rgb(139 157 175 / 20%);
