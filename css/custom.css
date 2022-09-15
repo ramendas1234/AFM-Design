@@ -1,0 +1,36 @@
+   /*footer*/
+   
+   .text-muted1 {
+       font-size: 13px;
+   }
+   
+   .text-muted {
+       font-size: 13px;
+   }
+   /*AFAN logo*/
+   
+   .sidebar-icon1 {
+       cursor: pointer;
+   }
+   
+   
+   
+   
+   /*AFAN events*/
+   
+   .card-text {
+       color: #484e53;
+   }
+   
+   /*.btn {
+       border: none;
+   }*/
+   /*identification*/
+   
+   
+   
+   .afm-dashboard-section .card {
+       border-radius: 10px;
+       filter: drop-shadow(0px 2px 3px rgba(139, 157, 175, 0.1));
+       -webkit-box-shadow: none;
+   }

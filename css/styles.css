@@ -101,11 +101,10 @@ hr {
     background-color: #fff;
     border-bottom: 1px solid rgba(0, 0, 0, 0.125);
     text-align: center;
-    font-family: 'Lato', sans-serif;
-    font-size: 14px;
+    font-family: 'lato-black';
+    font-size: 15px;
     opacity: 1;
-    color: #3a3a3a;
-    font-weight: bold;
+    color: #3B4044;
 }
 
 .card-header1 {
@@ -118,7 +117,7 @@ hr {
     font-family: 'lato-black';
     font-size: 16px;
     opacity: 1;
-    color: #3B4044;
+    color: #3a3a3a;
     font-weight: bold;
 }
 
@@ -138,7 +137,7 @@ hr {
 
 .card-footer:last-child {
     border-radius: 0 0 calc(0.25rem - 1px) calc(0.25rem - 1px);
-    font-family: 'Lato', sans-serif;
+    font-family: 'lato-bold';
     font-weight: bold;
     font-size: 13px;
     text-align: center;
@@ -185,7 +184,7 @@ hr {
     color: #fff;
     text-align: center;
     white-space: nowrap;
-    background-color: #0d6efd;
+    background-color: rgba(0, 174, 239, 1);
     transition: width 0.6s ease;
 }
 
@@ -858,8 +857,10 @@ body {
     margin: 10px;
     /* color: rgba(141, 198, 63, 1); */
     font-family: 'Lato', sans-serif;
-    font-size: 14px;
     line-height: 1.8;
+    font-size: 13px;
+    color: #484e53;
+    font-weight: 400;
 }
 
 .listicon1 li {
@@ -1011,17 +1012,18 @@ img.sidebar-icon {
     margin-bottom: 14px;
 }
 
-.subtitle {
+.assets-card .subtitle {
     color: #A3B3C1;
-    font-size: 14px;
-    font-family: 'Lato', sans-serif;
-    font-weight: bold;
+    font-size: 13px;
+    font-family: 'lato-bold';
+    font-weight: normal;
 }
 
-.subtitle1 {
+.assets-card .subtitle1 {
     color: #656C73;
-    font-family: 'Lato', sans-serif;
-    font-weight: bold;
+    font-family: 'lato-black';
+    font-size: 15px;
+    font-weight: normal;
 }
 
 .marginheading {

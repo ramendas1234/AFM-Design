@@ -1,5 +1,33 @@
 @charset "UTF-8";
 
+.insurance-card .listicon li span{
+    font-size: 15px;
+}
+.insurance-card .listicon li:nth-child(1) span{
+    color: #00C59E;
+}
+.insurance-card .listicon li:nth-child(2) span, .insurance-card .listicon li:nth-child(5) span, .insurance-card .listicon li:nth-child(7) span{
+    color: #727272;
+}
+.insurance-card .listicon li:nth-child(3) span{
+    color: #30B7FA;
+}
+.insurance-card .listicon li:nth-child(4) span{
+    color: #F867A1;
+}
+.insurance-card .listicon li:nth-child(6) span{
+    color: #FE9800;
+}
+.bullet{
+    float: right;
+    font-size: 7px !important;
+}
+.bullet-green{
+    color: rgba(132, 220, 111, 1) !important;
+}
+.bullet-red{
+    color: rgba(240, 103, 103, 1) !important;
+}
 .round {
   position: relative;
   display: inline-block;
@@ -331,7 +359,7 @@
     border-width: 2px;
 }
 .afm-dashboard-section .card .card-footer{
-    font-size: 16px;
+    font-size: 15px;
     color: #fff;
     text-decoration: none;
     padding: 17px 0px;
@@ -346,6 +374,12 @@
 
 .assets-card  .card-body ul{
     padding: 0% 15%;
+}
+.net-worth{
+    width: 100%;
+}
+.net-worth li{
+    width: 50%;
 }
 .afm-dashboard-section .card .card-body ul li .progress{
     height: 11px !important;

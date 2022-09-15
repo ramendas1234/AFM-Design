@@ -15,6 +15,7 @@
     <link href="css/vanilla-calendar.min.css" rel="stylesheet" />
     <link href="css/styles.css" rel="stylesheet" />
     <link href="css/afm-styles.css" rel="stylesheet" />
+    <link href="css/custom.css" rel="stylesheet" />
     <link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
     <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
 
@@ -92,16 +93,16 @@
                     <div class="sb-sidenav-menu">
                         <div class="nav">
                             <a class="nav-link" href="tables.html">
-                                <div class="sb-nav-link-icon"><img class="sidebar-icon" src="assets/img/download (15).png"></div>
+                                <div class="sb-nav-link-icon"><img class="sidebar-icon" src="assets/img/leftmenu/dashboard.svg"></div>
                                 <!-- Tables -->
                             </a>
                             <a class="nav-link" href="tables.html">
-                                <div class="sb-nav-link-icon"><img class="sidebar-icon" src="assets/img/download (14).png"></div>
+                                <div class="sb-nav-link-icon"><img class="sidebar-icon" src="assets/img/leftmenu/profile.svg"></div>
                                 <!-- Tables -->
                             </a>
                             <!-- <div class="sb-sidenav-menu-heading">Core</div> -->
                             <a class="nav-link" href="index.html">
-                                <div class="sb-nav-link-icon"><img class="sidebar-icon" src="assets/img/download.png">
+                                <div class="sb-nav-link-icon"><img class="sidebar-icon" src="assets/img/leftmenu/structures.svg">
                                 </div>
                                 <!-- Dashboard -->
                             </a>
@@ -109,29 +110,31 @@
 
 
                             <a class="nav-link" href="tables.html">
-                                <div class="sb-nav-link-icon"><img class="sidebar-icon" src="assets/img/download (1).png"></div>
+                                <div class="sb-nav-link-icon"><img class="sidebar-icon" src="assets/img/leftmenu/net position.svg"></div>
+                                <!-- Tables -->
+                            </a>
+
+                            <a class="nav-link" href="tables.html">
+                                <div class="sb-nav-link-icon"><img class="sidebar-icon" src="assets/img/leftmenu/estate planning.svg"></div>
                                 <!-- Tables -->
                             </a>
                             <a class="nav-link" href="tables.html">
-                                <div class="sb-nav-link-icon"><img class="sidebar-icon" src="assets/img/download (2).png"></div>
+                                <div class="sb-nav-link-icon"><img class="sidebar-icon" src="assets/img/leftmenu/protection.svg"></div>
                                 <!-- Tables -->
                             </a>
                             <a class="nav-link" href="tables.html">
-                                <div class="sb-nav-link-icon"><img class="sidebar-icon" src="assets/img/download (3).png"></div>
+                                <div class="sb-nav-link-icon"><img class="sidebar-icon" src="assets/img/leftmenu/files.svg"></div>
                                 <!-- Tables -->
                             </a>
                             <a class="nav-link" href="tables.html">
-                                <div class="sb-nav-link-icon"><img class="sidebar-icon" src="assets/img/download (4).png"></div>
+                                <div class="sb-nav-link-icon"><img class="sidebar-icon" src="assets/img/leftmenu/education.svg"></div>
                                 <!-- Tables -->
                             </a>
                             <a class="nav-link" href="tables.html">
-                                <div class="sb-nav-link-icon"><img class="sidebar-icon" src="assets/img/download (5).png"></div>
+                                <div class="sb-nav-link-icon"><img class="sidebar-icon" src="assets/img/leftmenu/setting.svg"></div>
                                 <!-- Tables -->
                             </a>
-                            <a class="nav-link" href="tables.html">
-                                <div class="sb-nav-link-icon"><img class="sidebar-icon" src="assets/img/download (6).png"></div>
-                                <!-- Tables -->
-                            </a>
+
                         </div>
                     </div>
 
@@ -228,14 +231,9 @@
                                                 <div class="round">
                                                     <input type="checkbox" id="identification5" />
                                                     <label for="identification5"></label>
-                                                </div> Health 
+                                                </div> Health Consideration
                                             </li>
-                                            <li>
-                                                <div class="round">
-                                                    <input type="checkbox" id="identification6" />
-                                                    <label for="identification6"></label>
-                                                </div> Consideration 
-                                            </li>
+                                            
 
 
                                         </ul>
@@ -303,32 +301,29 @@
                                 <div class="card h-100 insurance-card">
                                     <div class="card-header">Insurance Summary</div>
                                     <div class="card-body">
-                                        <div class="row">
-                                            <div class="col-md-9">
-                                                <ul class="listicon">
-                                                    <li><img class="identification" src="assets/img/download (21).png">Car </li>
-                                                    <li><img class="identification" src="assets/img/download (18).png"> Home </li>
-                                                    <li><img class="identification" src="assets/img/download (19).png"> Health</li>
-                                                    <li><img class="identification" src="assets/img/download (20).png">Disability </li>
-                                                    <li><img class="identification" src="assets/img/download (20).png">Income </li>
-                                                    <li><img class="identification" src="assets/img/download (20).png">Life </li>
+                                        <ul class="listicon">
+                                                    <li><div class="round"><span><i class="fa-solid fa-car-side"></i></span></div> Car 
+                                                        <span class="bullet bullet-green"><i class="fa-solid fa-circle"></i></span>
+                                                    </li>
+                                                    <li><div class="round"><span><i class="fa-brands fa-accessible-icon"></i></span></div>Disability
+                                                    <span class="bullet bullet-red"><i class="fa-solid fa-circle"></i></span>
+                                                    </li>
+                                                    <li><div class="round"><span><i class="fa-solid fa-heart-circle-bolt"></i></span></div> Health
+                                                    <span class="bullet bullet-green"><i class="fa-solid fa-circle"></i></span>
+                                                    </li>
+                                                    <li><div class="round"><span><i class="fa-solid fa-house"></i></span></div>Home 
+                                                    <span class="bullet bullet-green"><i class="fa-solid fa-circle"></i></span>
+                                                    </li>
+                                                    <li><div class="round"><span><i class="fa-solid fa-dollar-sign"></i></span></div>Income  
+                                                    <span class="bullet bullet-red"><i class="fa-solid fa-circle"></i></span>
+                                                    </li>
+                                                    <li><div class="round"><span><i class="fa-regular fa-heart"></i></span></div>Life 
+                                                    <span class="bullet bullet-green"><i class="fa-solid fa-circle"></i></span>
+                                                    </li>
+                                                    <li><div class="round"><span><i class="fa-solid fa-circle-plus"></i></span></div>Trauma 
+                                                    <span class="bullet bullet-red"><i class="fa-solid fa-circle"></i></span>
+                                                    </li>
                                                 </ul>
-
-                                            </div>
-                                            <div class="col-md-2">
-                                                <ul class="listicon1">
-                                                    <li> </li>
-                                                    <li> </li>
-                                                    <li> </li>
-                                                    <li></li>
-                                                    <li></li>
-                                                    <li></li>
-
-                                                </ul>
-
-                                            </div>
-
-                                        </div>
                                     </div>
                                     <a class="card-footer bg-transparent2 border-success" href="#">Update
                                         <i class="arrow right"></i>
@@ -345,7 +340,7 @@
                                         <ul class="assetinfo">
                                             <li><img class="assetsummary" src="assets/img/download (25).png"></li>
                                             
-                                            <li><h6 class="subtitle">Assets summary</h6></li>
+                                            <li><h6 class="subtitle">Total Assets</h6></li>
                                             <li><h6 class="subtitle1">$271,638</h6></li>
                                             <li>
                                                 <div class="progress" style="height:6px">
@@ -358,7 +353,7 @@
                                         <ul class="assetinfo">
                                             <li><img class="assetsummary" src="assets/img/download (26).png"></li>
                                             <li><h5 class="subtitle">Total Liabilities</h5></li>
-                                            <li><h6 class="subtitle1">$271,638</h6></li>
+                                            <li><h6 class="subtitle1">-$195,839</h6></li>
                                             <li>
                                                 <div class="progress" style="height:6px">
                                                     <div class="progress-bar1" role="progressbar" aria-label="Basic example" style="width: 54%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
@@ -370,17 +365,12 @@
                                             
                                         </ul>
 
-                                        <div class="row">
-                                            <div class="col-md-7 marginheading">
+                                        <ul class="net-worth p-3 d-inline-flex marginheading">
+                                            <li><h6 class="subtitle">Net Worth</h6></li>
+                                            <li class="text-right"><h6 class="subtitle1">$75,798</h6></li>
+                                        </ul>
 
-                                                <h6 class="subtitle">Net Worth</h6>
-                                            </div>
-                                            <div class="col-md-5 marginheading ">
-
-                                                <h6 class="subtitle1">$271,638</h6>
-                                            </div>
-
-                                        </div>
+                                        
 
 
                                     </div>
@@ -670,7 +660,7 @@
                             </div>
                             <div class="card mb-4">
                                 <div class="card-header1">
-                                    AFAN events
+                                    AFAN Events
                                 </div>
                                 <div class="card-body">
 
@@ -708,9 +698,9 @@
 
 
 
-                    <img class="logo" src="assets/img/download (10).png" alt="logo">
+                    <img class="logo" src="assets/img/footer.svg" alt="logo">
                     <div class="text-muted1">
-                        <h6>Powerd by AFM</h6>
+                        <p>Powered By XFM Tech</p>
                     </div>
                     <div class="text-muted">
 
