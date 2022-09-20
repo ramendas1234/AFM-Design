@@ -24,3 +24,41 @@ window.addEventListener('DOMContentLoaded', event => {
     }
 
 });
+
+jQuery(document).ready(function($){
+    $(document).on('click','.dashboard-notice-logo',function(){
+        $(".dashboard-notice").toggleClass("d-none");
+        $(".dashboard-notice-logo").toggleClass("d-none");
+    });
+
+    $(document).on('click','.dashboard-notice a.btn',function(){
+        
+        $(".dashboard-notice").toggleClass("d-none");
+        $(".dashboard-notice-logo").toggleClass("d-none");
+    });
+
+    $(document).on('click','#chat-send-btn', function(){
+        var txt = $('.chat-input').val();
+        $('.chat-input').val('');
+        var dt = new Date();
+        var time = dt.getHours() + ":" + dt.getMinutes();
+        
+
+
+        $('.chat-conversation-list').last().append(`<li class="mar-btm">
+                                        
+                                        <div class="media-body pad-hor speech-right">
+                                            <div class="speech">
+                                                <a href="#" class="media-heading">Lucy Doe</a>
+                                                <p>${txt}</p>
+                                                <p class="speech-time text-right">
+                                                    <i class="fa-regular fa-clock"></i> ${time}
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </li>`);
+        $("div").scrollTop(1500);
+
+        
+    });
+});

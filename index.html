@@ -11,6 +11,7 @@
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css"/>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/dt/dt-1.12.1/datatables.min.css"/>
+    <link href="css/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
 
     <link href="css/vanilla-calendar.min.css" rel="stylesheet" />
     <link href="css/styles.css" rel="stylesheet" />
@@ -92,16 +93,16 @@
                 <nav class="sb-sidenav accordion sb-sidenav-dark" id="sidenavAccordion">
                     <div class="sb-sidenav-menu">
                         <div class="nav">
-                            <a class="nav-link" href="tables.html">
+                            <a class="nav-link" href="#">
                                 <div class="sb-nav-link-icon"><img class="sidebar-icon" src="assets/img/leftmenu/dashboard.svg"></div>
                                 <!-- Tables -->
                             </a>
-                            <a class="nav-link" href="tables.html">
+                            <a class="nav-link" href="#">
                                 <div class="sb-nav-link-icon"><img class="sidebar-icon" src="assets/img/leftmenu/profile.svg"></div>
                                 <!-- Tables -->
                             </a>
                             <!-- <div class="sb-sidenav-menu-heading">Core</div> -->
-                            <a class="nav-link" href="index.html">
+                            <a class="nav-link" href="#">
                                 <div class="sb-nav-link-icon"><img class="sidebar-icon" src="assets/img/leftmenu/structures.svg">
                                 </div>
                                 <!-- Dashboard -->
@@ -109,28 +110,28 @@
 
 
 
-                            <a class="nav-link" href="tables.html">
+                            <a class="nav-link" href="#">
                                 <div class="sb-nav-link-icon"><img class="sidebar-icon" src="assets/img/leftmenu/net position.svg"></div>
                                 <!-- Tables -->
                             </a>
 
-                            <a class="nav-link" href="tables.html">
+                            <a class="nav-link" href="#">
                                 <div class="sb-nav-link-icon"><img class="sidebar-icon" src="assets/img/leftmenu/estate planning.svg"></div>
                                 <!-- Tables -->
                             </a>
-                            <a class="nav-link" href="tables.html">
+                            <a class="nav-link" href="#">
                                 <div class="sb-nav-link-icon"><img class="sidebar-icon" src="assets/img/leftmenu/protection.svg"></div>
                                 <!-- Tables -->
                             </a>
-                            <a class="nav-link" href="tables.html">
+                            <a class="nav-link" href="#">
                                 <div class="sb-nav-link-icon"><img class="sidebar-icon" src="assets/img/leftmenu/files.svg"></div>
                                 <!-- Tables -->
                             </a>
-                            <a class="nav-link" href="tables.html">
+                            <a class="nav-link" href="#">
                                 <div class="sb-nav-link-icon"><img class="sidebar-icon" src="assets/img/leftmenu/education.svg"></div>
                                 <!-- Tables -->
                             </a>
-                            <a class="nav-link" href="tables.html">
+                            <a class="nav-link" href="#">
                                 <div class="sb-nav-link-icon"><img class="sidebar-icon" src="assets/img/leftmenu/setting.svg"></div>
                                 <!-- Tables -->
                             </a>
@@ -142,16 +143,19 @@
             </div>
 
             <div id="layoutSidenav_content" class="bg-light">
-                <div class="border-b bg-white border-gray-300 px-5 py-2 shadow-sm  text-xl font-bold">
+                <div class="topnav-wrapper border-b bg-white border-gray-300 px-5 py-2 shadow-sm  text-xl font-bold">
                     <div class="sb-nav-link-icon">
 
 
                         <ul>
                             <li class="theList1">
 
-                                <img src="assets/img/1.png" class="nav-profile img-fluid" alt="">John Citizen
-                                <span class=" fa fa-angle-down"></span>
-                                </a>
+                                <!-- <img src="assets/img/1.png" class="nav-profile img-fluid" alt=""> -->
+                                <span class="profile-left-circle-user"><i class="fa-regular fa-circle-user"></i></span>
+                                <span class="profile-left-user-name">
+                                    John Citizen
+                                    <span class=" fa fa-angle-down"></span>
+                                </span>
 
                             </li>
                             <li class="theList">
@@ -170,15 +174,20 @@
 
 
                         
-                        <div class="row mt-4">
+                        <div class="row mt-1">
                             <div class="col-lg-12 col-md-12">
+                                <div class="mb-4">
+                                <a class="dashboard-notice-logo d-none" href="#"><i class="bi bi-info-circle"></i></a>
+                                </div>
                                 <div class="card mb-4 dashboard-notice">
                                 <div class="card-body bg1">
                                     <div class="row">
 
                                         <div class="col-md-10">
-                                            <p class="mb-0 card-text1">
-                                                <img class="noticesection" src="assets/img/download (24).png"> Notice section we can add details about updates and links to new function how to videos
+                                            <p class="mt-1 card-text1">
+                                                
+                                                <span class="noticesection"><i class="bi bi-info-circle"></i></span>
+                                                 Notice section we can add details about updates and links to new function how to videos
 
                                             </p>
                                         </div>
@@ -284,12 +293,42 @@
                                         </ul>
                                     </div>
                                     <div class="card-footer">
-                                        <a id="afanSelect" data-toggle="collapse" href="#afanCollapse" role="button" aria-expanded="false" aria-controls="afanCollapse">Select <i class="arrow right"></i></a>
+
+                                        <div class="btn-group">
+                                        <a id="afanSelect" class="nav-link dropup dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Select</a>
+
+                                        <div class="dropdown-menu">
+                                          <a class="dropdown-item" href="#">Action required update</a>
+                                          <a class="dropdown-item" href="#">Confirmed, up to date</a>
+                                        </div>
+                                      </div>
+                                        
+                                        
+
+
+                                        
+
+
+
+
+                                        <!-- <a id="afanSelect" data-toggle="collapse" href="#afanCollapse" role="button" aria-expanded="false" aria-controls="afanCollapse">Select <i class="arrow right"></i></a>
                                         <div class="collapse" id="afanCollapse">
                                           <div class="afan-collapse-content">
-                                            Action required, update <br>Confirmed, up to date
+                                            <ul class="card-list-button mt-5">
+                                                <li><button type="button" class="btn btn-primary">Action required</button></li>
+                                                <li><button type="button" class="btn btn-primary">Confirmed, up to date</button></li>
+                                                
+                                                
+                                            </ul>
+                                            
+
                                           </div>
-                                        </div> 
+                                        </div>  -->
+
+
+
+
+
                                     </div>
                                     
                                            
@@ -408,7 +447,7 @@
             <div id="demo-chat-body" class=" in">
                         <div class="nano has-scrollbar" style="height:380px; min-height: 570px;">
                             <div class="nano-content pad-all" tabindex="0" style="right: -17px;">
-                                <ul class="list-unstyled media-block">
+                                <ul class="list-unstyled media-block chat-conversation-list">
                                     <li class="mar-btm">
                                         <div class="media-left">
                                             <img src="assets/img/avatar-chat-icon.png" class="img-circle img-sm" alt="Profile Picture">
@@ -418,7 +457,7 @@
                                                 <a href="#" class="media-heading">John Doe</a>
                                                 <p>Hello Lucy, how can I help you today ?</p>
                                                 <p class="speech-time ">
-                                                <i class="fa fa-clock-o fa-fw"></i>09:23AM
+                                                <i class="fa-regular fa-clock"></i>09:23AM
                                                 </p>
                                             </div>
                                         </div>
@@ -437,7 +476,7 @@
                                                 <a href="#" class="media-heading">Lucy Doe</a>
                                                 <p>Hi, I want to buy a new shoes.</p>
                                                 <p class="speech-time text-right">
-                                                    <i class="fa fa-clock-o fa-fw"></i> 09:23AM
+                                                    <i class="fa-regular fa-clock"></i> 09:23AM
                                                 </p>
                                             </div>
                                         </div>
@@ -451,7 +490,7 @@
                                                 <a href="#" class="media-heading">John Doe</a>
                                                 <p>Shipment is free. You\'ll get your shoes tomorrow!</p>
                                                 <p class="speech-time ">
-                                                    <i class="fa fa-clock-o fa-fw"></i> 09:25
+                                                    <i class="fa-regular fa-clock"></i> 09:25
                                                 </p>
                                             </div>
                                         </div>
@@ -465,7 +504,7 @@
                                                 <a href="#" class="media-heading">Lucy Doe</a>
                                                 <p>Wow, that\'s great!</p>
                                                 <p class="speech-time text-right">
-                                                    <i class="fa fa-clock-o fa-fw"></i> 09:27
+                                                    <i class="fa-regular fa-clock"></i> 09:27
                                                 </p>
                                             </div>
                                         </div>
@@ -484,7 +523,7 @@
                                                 <a href="#" class="media-heading">Lucy Doe</a>
                                                 <p>Ok. Thanks for the answer. Appreciated.</p>
                                                 <p class="speech-time text-right">
-                                                <i class="fa fa-clock-o fa-fw"></i> 09:28
+                                                <i class="fa-regular fa-clock"></i> 09:28
                                                 </p>
                                             </div>
                                         </div>
@@ -498,7 +537,7 @@
                                                 <a href="#" class="media-heading">John Doe</a>
                                                 <p>You are welcome! <br> Is there anything else I can do for you today?</p>
                                                 <p class="speech-time ">
-                                                    <i class="fa fa-clock-o fa-fw"></i> 09:30
+                                                    <i class="fa-regular fa-clock"></i> 09:30
                                                 </p>
                                             </div>
                                         </div>
@@ -512,7 +551,7 @@
                                                 <a href="#" class="media-heading">Lucy Doe</a>
                                                 <p>Nope, That\'s it.</p>
                                                 <p class="speech-time text-right">
-                                                    <i class="fa fa-clock-o fa-fw"></i> 09:31
+                                                    <i class="fa-regular fa-clock"></i> 09:31
                                                 </p>
                                             </div>
                                         </div>
@@ -531,7 +570,7 @@
                                                 <a href="#" class="media-heading">John Doe</a>
                                                 <p>Thank you for contacting us today</p>
                                                 <p class="speech-time">
-                                                    <i class="fa fa-clock-o fa-fw"></i> 09:32
+                                                    <i class="fa-regular fa-clock"></i> 09:32
                                                 </p>
                                             </div>
                                         </div>
@@ -549,7 +588,7 @@
                                         <input type="text" placeholder="Type a message..." class="form-control chat-input">
                                     </li>
                                     <li>
-                                        <button class="btn btn-primary btn-block" type="submit">
+                                        <button id="chat-send-btn" class="btn btn-primary btn-block" type="submit">
                                             <i class="fa-solid fa-arrow-right"></i>
                                         </button>
                                     </li>
@@ -658,7 +697,7 @@
                                     <!-- /.card-body -->
                                 </div>
                             </div>
-                            <div class="card mb-4">
+                            <div class="card mb-4 afan-events">
                                 <div class="card-header1">
                                     AFAN Events
                                 </div>
@@ -675,7 +714,7 @@
                                         <div class="col-md-7">
                                             <p class="card-text">Our online cash coaching webinar that teaches the ins and outs of mastering your cash flow. Register for our online webinar and access to our PFM solutions. A great way for your kids to learn the importance
                                                 of Cash Flow.</p>
-                                            <a href="#" class="btn btn-primary">Register</a>
+                                            <a href="#" class="btn btn-primary register">Register</a>
 
                                         </div>
 

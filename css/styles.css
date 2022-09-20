@@ -576,6 +576,10 @@ body {
     margin-left: -225px;
 }
 
+/*#layoutSidenav_content .topnav-wrapper{
+    padding-top: 0px;
+}*/
+
 .sb-sidenav-toggled #layoutSidenav #layoutSidenav_nav {
     transform: translateX(0);
 }
@@ -953,7 +957,8 @@ ul {
 
 img.sidebar-icon {
     width: 25px;
-    margin-right: 18px !important;
+    /*margin-right: 18px !important;*/
+    margin-left: 4px;
 }
 
 .ps-3 {
@@ -1000,6 +1005,7 @@ img.sidebar-icon {
 
 .afanevent {
     border-radius: 15px;
+    border: unset;
 }
 
 .assetsummary {
@@ -1041,10 +1047,18 @@ img.sidebar-icon {
     border: none !important;
 }
 
-.upcoming-event, .chat-event{
+.upcoming-event, .chat-event, .afan-events{
     border: unset;
     border-radius: 5px;
     box-shadow: 0px 1px 3px 0 rgb(139 157 175 / 20%);
+}
+.afan-events .register{
+    border: unset;
+}
+
+.afan-events .register:hover{
+    border: unset;
+    background-color: #2b8f91;
 }
 
 .event1 {
@@ -1143,11 +1157,11 @@ img.sidebar-icon {
     text-align: right;
     list-style-position: inside;
     margin-top: -29px;
-    margin-right: 29px;
+    margin-right: 8px;
 }
 
 .theList1 {
-    margin-top: 10px;
+    margin-top: 0px;
 }
 
 .container-fullwidth,
@@ -1183,7 +1197,8 @@ body {
 }
 
 .nav-item a:hover {
-    border: 1px solid #fff !important;
+    /*border: 1px solid #fff !important;*/
+    border: unset;
 }
 
 .nav-item a {
